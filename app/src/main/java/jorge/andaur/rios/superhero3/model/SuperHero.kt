@@ -8,6 +8,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Superhero(
+
     val id: String,
     val name: String,
     val powerstats: PowerStats,

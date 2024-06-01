@@ -1,11 +1,14 @@
 package jorge.andaur.rios.superhero3.repo
 
 import android.util.Log
+
 import jorge.andaur.rios.superhero3.model.Superhero
 import jorge.andaur.rios.superhero3.network.SuperheroApiService
+import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import retrofit2.Response
 
 class SuperheroRepository (private val apiService: SuperheroApiService) {
 
@@ -52,6 +55,8 @@ class SuperheroRepository (private val apiService: SuperheroApiService) {
         // Retorna la lista de superhéroes obtenidos de la API
         return@coroutineScope superheroes
     }
+
+
 
 
 //    suspend fun getAllSuperheroes(): List<Superhero> {
